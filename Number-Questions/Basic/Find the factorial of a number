@@ -1,0 +1,28 @@
+Find the factorial of a number
+
+---------------------------------------Using While Loop
+public class Main{
+	public static void main(String[] args) {
+        int num = 6;
+        int prod = 1;
+        int sum = 2;
+        while(num>=sum){
+        prod=prod*sum;
+        sum++;
+        }
+         System.out.println("Factorial of " + prod + " is: " + factorial);
+	}	
+}
+
+
+--------------------------------------Using For Loop
+public class Main {
+    public static void main(String[] args) {
+        int num = 6;          // Number to find factorial
+        int factorial = 1;    // Initialize product to 1
+        for (int i = 1; i <= num; i++) {   // Loop from 1 to num
+            factorial *= i;                 // Multiply factorial by current i
+        }
+        System.out.println("Factorial of " + num + " is: " + factorial);
+    }
+}
