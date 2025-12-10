@@ -1,0 +1,20 @@
+Check whether a given number is a palindrome
+
+public class Main
+{
+	public static void main(String[] args) {
+        int num = 1221;
+        int temp = num;
+        int sum=0;
+        while(temp!=0){
+            int digit = temp%10;
+            sum=(sum*10)+digit;
+            temp=temp/10;
+        }
+        if(sum==num){
+            System.out.println("Number is Palindrome");
+        }else{
+            System.out.println("Number is not Palindrome");
+        }
+	}
+}
