@@ -1,0 +1,18 @@
+Count the number of digits in a number.
+
+public class Main {
+    public static void main(String[] args) {
+        int num = 1265;
+        int sum=0;
+        if(num==0){
+            System.out.println(1);
+            return;
+        }
+        while(num!=0){
+            sum++;
+            num=num/10;
+        }
+        System.out.println(sum);
+    }
+}
+
