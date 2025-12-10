@@ -1,0 +1,15 @@
+Reverse the number mathematically (without leading zeros)
+
+public class Main
+{
+	public static void main(String[] args) {
+		int num = 650;
+		int sum=0;
+		while(num>0){
+		int no = num%10;
+		sum = (sum * 10) + no;
+		num=num/10;
+		}
+		System.out.println(sum);
+	}
+}
