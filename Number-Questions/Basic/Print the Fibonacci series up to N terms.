@@ -1,0 +1,23 @@
+Print the Fibonacci series up to N terms.
+
+public class Main {
+    public static void main(String[] args) {
+        int total = 8;  // Number of terms
+        int prev1 = 0;
+        int prev2 = 1;
+        int next;
+
+        for (int i = 0; i < total; i++) {
+            // Print a comma only if it's not the first term
+            if (i > 0) {
+                System.out.print(",");
+            }
+            System.out.print(prev1);
+
+            // Calculate next term
+            next = prev1 + prev2;
+            prev1 = prev2;
+            prev2 = next;
+        }
+    }
+}
